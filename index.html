@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>N2XUS — The Next Generation Discord Experience</title>
+<meta name="description" content="N2XUS : modération, sécurité, tickets, boutique et dashboard pour votre serveur Discord. Module IA bientôt disponible.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/effects.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<canvas id="bg-far"></canvas>
+<canvas id="bg-mid"></canvas>
+<canvas id="bg-near"></canvas>
+<div class="grain"></div>
+
+<nav class="nav">
+  <div class="brand"><img src="assets/logo.png" alt=""> N2XUS</div>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="features.html">Fonctionnalités</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="ai.html">IA</a>
+    <a href="faq.html">FAQ</a>
+    <a class="gold" href="add.html">Rejoindre N2XUS</a>
+  </div>
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="halo" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Discord Bot • Modération &amp; Gestion de serveur</p>
+    <h1>N2XUS</h1>
+    <h2 class="letters">The Next Generation Discord Experience</h2>
+    <p class="lead">Modération, sécurité anti-raid, tickets, boutique à points et dashboard web : tout est déjà fonctionnel. Le module IA arrive bientôt.</p>
+    <div class="hero-actions">
+      <a class="btn" href="add.html">💬 Rejoindre N2XUS</a>
+      <a class="btn btn-ghost" href="dashboard.html">Voir le dashboard</a>
+    </div>
+  </div>
+  <div class="hero-stage">
+    <div class="hero-3d">
+      <div class="glass-ring"></div>
+      <img src="assets/logo.png" alt="Logo N2XUS">
+    </div>
+  </div>
+  <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+</section>
+
+<!-- 2. POURQUOI N2XUS -->
+<section class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">Pourquoi N2XUS</p>
+    <h2>Un bot pensé pour durer</h2>
+    <p>Construit pour les serveurs exigeants, avec un développement actif et transparent.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <span class="num">01</span>
+      <h3>Développement actif</h3>
+      <p>Le bot évolue en continu, avec une équipe joignable directement par ticket sur Discord.</p>
+    </div>
+    <div class="why-card reveal">
+      <span class="num">02</span>
+      <h3>Sécurité avancée</h3>
+      <p>Anti-raid configurable, verrouillage automatique et journal de sécurité détaillé.</p>
+    </div>
+    <div class="why-card reveal">
+      <span class="num">03</span>
+      <h3>Dashboard clair</h3>
+      <p>Un panneau web sans configuration inutile, pensé pour aller à l'essentiel.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 3. FONCTIONNALITÉS -->
+<section class="section" id="fonctionnalites">
+  <div class="section-head reveal">
+    <p class="eyebrow">Fonctionnalités</p>
+    <h2>Tout ce qu'il faut pour votre serveur</h2>
+    <p>Les modules actifs aujourd'hui — la liste complète est sur la page <a href="features.html">Fonctionnalités</a>.</p>
+  </div>
+  <div class="grid">
+    <div class="feature reveal-zoom">
+      <span class="icon">🛡️</span>
+      <h3>Modération</h3>
+      <p>Sanctions, logs et outils de modération pour garder le contrôle en toutes circonstances.</p>
+    </div>
+    <div class="feature reveal-zoom">
+      <span class="icon">🔒</span>
+      <h3>Sécurité</h3>
+      <p>Protection anti-raid, verrouillage automatique du serveur et journal de sécurité.</p>
+    </div>
+    <div class="feature reveal-zoom">
+      <span class="icon">🎫</span>
+      <h3>Tickets</h3>
+      <p>Un système de support personnalisable, avec pont en message privé (DM bridge).</p>
+    </div>
+    <div class="feature reveal-zoom">
+      <span class="icon">🛒</span>
+      <h3>Boutique</h3>
+      <p>1 message = 1 point (60 secondes entre deux récompenses), échangeables contre des rôles.</p>
+    </div>
+    <div class="feature reveal-zoom">
+      <span class="icon">🌐</span>
+      <h3>Dashboard</h3>
+      <p>Une interface web complète pour piloter votre serveur sans toucher à Discord.</p>
+    </div>
+    <div class="feature soon reveal-zoom">
+      <span class="tag-soon">Bientôt disponible</span>
+      <span class="icon">🤖</span>
+      <h3>N2XUS IA</h3>
+      <p>Configuration assistée par IA — en cours de finalisation, pas encore active.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 4. DASHBOARD PREVIEW -->
+<section class="section">
+  <div class="dash-wrap">
+    <div class="dash-copy reveal-left">
+      <p class="eyebrow">Dashboard Preview</p>
+      <h2>Votre serveur, en un coup d'œil</h2>
+      <p>Captures d'écran réelles du dashboard N2XUS, tel qu'il fonctionne aujourd'hui : membres, tickets, modération et sécurité réunis dans un seul panneau.</p>
+      <a class="btn btn-ghost" href="dashboard.html">Explorer le dashboard</a>
+    </div>
+    <div class="dash-stage">
+      <div class="terminal" data-cursor-hover>
+        <div class="terminal-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span style="margin-left:auto">N2XUS PANEL — Aperçu réel</span>
+        </div>
+        <div class="terminal-body">
+          <div class="dash-slides">
+            <img src="assets/dashboard/overview.png" class="active" alt="Vue d'ensemble du dashboard N2XUS">
+            <img src="assets/dashboard/security.png" alt="Page Sécurité du dashboard N2XUS">
+            <img src="assets/dashboard/conversations.png" alt="Page Conversations (DM bridge) du dashboard N2XUS">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider-nav">
+    <button data-slide="prev" aria-label="Précédent">←</button>
+    <button data-slide="next" aria-label="Suivant">→</button>
+  </div>
+  <div class="slider-dots"></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 5. N2XUS IA -->
+<section class="section">
+  <div class="ai-wrap">
+    <div class="ai-copy reveal-left">
+      <span class="soon-badge"><span class="dot-anim"></span> Bientôt disponible</span>
+      <h2>N2XUS IA arrive prochainement</h2>
+      <p>Le module d'intelligence artificielle est en cours de finalisation. Il n'est pas encore actif sur les serveurs : cette section présente ce qui est prévu, pas une fonctionnalité disponible aujourd'hui.</p>
+      <a class="btn btn-ghost" href="ai.html">Voir le détail</a>
+    </div>
+    <div class="chat reveal-right" style="opacity:.6;filter:grayscale(.3)" data-cursor-hover>
+      <div class="msg user"><span class="who">Exemple illustratif</span>Configure mon serveur pour la modération.</div>
+      <div class="msg bot"><span class="who">N2XUS IA (à venir)</span>Configuration générée : anti-raid activé, logs créés, rôles assignés.</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 6. STATISTIQUES -->
+<section class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">Sur le serveur pilote N2XUS Studio</p>
+    <h2>Des chiffres réels, pas une vitrine</h2>
+    <p>Extraits directement du dashboard, sans exagération.</p>
+  </div>
+  <div class="stats-grid">
+    <div class="stat reveal-zoom">
+      <span class="count" data-target="21">0</span>
+      <span class="label">Membres</span>
+    </div>
+    <div class="stat reveal-zoom">
+      <span class="count" data-target="10">0</span>
+      <span class="label">Catégories actives</span>
+    </div>
+    <div class="stat reveal-zoom">
+      <span class="count" data-target="27">0</span>
+      <span class="label">Tickets créés</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 7. ENGAGEMENT -->
+<section class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">Notre engagement</p>
+    <h2>Un développement transparent</h2>
+  </div>
+  <div class="reviews-track">
+    <div class="review reveal">
+      <span class="stars">🛠️</span>
+      <p>N2XUS est en développement actif : les modules sont ajoutés et testés avant d'être annoncés comme disponibles.</p>
+    </div>
+    <div class="review reveal">
+      <span class="stars">💬</span>
+      <p>Le support se fait exclusivement par ticket sur le Discord officiel — une vraie personne répond à chaque demande.</p>
+    </div>
+    <div class="review reveal">
+      <span class="stars">📋</span>
+      <p>Rien n'est annoncé comme « disponible » tant que ce n'est pas réellement actif sur les serveurs.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- RÉSEAUX N2XUS -->
+<section class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">Réseaux N2XUS</p>
+    <h2>Suivez la suite du projet</h2>
+    <p>Le Discord est déjà actif. Les autres réseaux arrivent bientôt.</p>
+  </div>
+  <div class="social-grid">
+
+    <a class="social-card discord reveal-zoom" href="https://discord.gg/muHKVKVWa" data-cursor-hover>
+      <div class="ring-orbit"></div>
+      <div class="social-icon-wrap">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 14c5.5-2 10.5-2 16 0" stroke="#d8b24c" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M14.5 16c-3 5-4 12-3 18 3.2 2.4 6.5 3.8 9.8 4.6l1.7-3.4" stroke="#d8b24c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M33.5 16c3 5 4 12 3 18-3.2 2.4-6.5 3.8-9.8 4.6l-1.7-3.4" stroke="#d8b24c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <ellipse cx="18.5" cy="25" rx="2.6" ry="3" fill="#d8b24c"/>
+          <ellipse cx="29.5" cy="25" rx="2.6" ry="3" fill="#d8b24c"/>
+        </svg>
+      </div>
+      <h3>Discord</h3>
+      <p>Le serveur officiel : support, tickets et actualités du projet.</p>
+      <span class="social-cta">Rejoindre →</span>
+    </a>
+
+    <div class="social-card instagram soon reveal-zoom" data-cursor-hover>
+      <div class="ring-orbit"></div>
+      <span class="tag-soon">Bientôt</span>
+      <div class="social-icon-wrap">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="10" width="28" height="28" rx="9" stroke="#d8b24c" stroke-width="2.2"/>
+          <circle cx="24" cy="24" r="7" stroke="#d8b24c" stroke-width="2.2"/>
+          <circle cx="32.5" cy="15.5" r="1.8" fill="#d8b24c"/>
+        </svg>
+      </div>
+      <h3>Instagram</h3>
+      <p>Visuels, coulisses et annonces du studio.</p>
+      <span class="social-cta">À venir</span>
+    </div>
+
+    <div class="social-card tiktok soon reveal-zoom" data-cursor-hover>
+      <div class="ring-orbit"></div>
+      <span class="tag-soon">Bientôt</span>
+      <div class="social-icon-wrap">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M27 9v20.2c0 3.2-2.6 5.8-5.8 5.8-3.2 0-5.8-2.6-5.8-5.8 0-3.2 2.6-5.8 5.8-5.8.6 0 1.2.1 1.8.3" stroke="#d8b24c" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M27 9c0 5 3.8 9 8.5 9.3" stroke="#d8b24c" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3>TikTok</h3>
+      <p>Formats courts autour du développement de N2XUS.</p>
+      <span class="social-cta">À venir</span>
+    </div>
+
+    <div class="social-card youtube soon reveal-zoom" data-cursor-hover>
+      <div class="ring-orbit"></div>
+      <span class="tag-soon">Bientôt</span>
+      <div class="social-icon-wrap">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="13" width="32" height="22" rx="7" stroke="#d8b24c" stroke-width="2.2"/>
+          <path d="M21 19.5l9 4.5-9 4.5v-9z" fill="#d8b24c"/>
+        </svg>
+      </div>
+      <h3>YouTube</h3>
+      <p>Présentations approfondies et tutoriels du dashboard.</p>
+      <span class="social-cta">À venir</span>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 8. FAQ -->
+<section class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">FAQ</p>
+    <h2>Questions fréquentes</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-q">Comment ajouter N2XUS à mon serveur ?<span class="plus">+</span></button>
+      <div class="faq-a"><p>Rejoignez le serveur Discord officiel et ouvrez un ticket : l'équipe installe le bot avec vous. Il n'y a pas encore de lien d'invitation en libre-service.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q">Le dashboard est-il disponible gratuitement ?<span class="plus">+</span></button>
+      <div class="faq-a"><p>Oui, une fois le bot ajouté via ticket, l'accès au dashboard est fourni sans frais.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q">N2XUS IA est-elle active ?<span class="plus">+</span></button>
+      <div class="faq-a"><p>Pas encore : le module est en cours de finalisation. Détails sur la page <a href="ai.html">N2XUS IA</a>.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q">Comment fonctionne la boutique à points ?<span class="plus">+</span></button>
+      <div class="faq-a"><p>1 message envoyé = 1 point, avec un délai de 60 secondes entre deux récompenses. Les points s'échangent contre des rôles définis par l'administrateur.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. REJOINDRE N2XUS -->
+<section class="cta-final">
+  <div class="panel reveal-zoom">
+    <p class="eyebrow">Rejoignez N2XUS</p>
+    <h2>Prêt à passer à la génération suivante ?</h2>
+    <p>Rejoignez le serveur Discord officiel et ouvrez un ticket pour ajouter N2XUS et débloquer le dashboard.</p>
+    <a class="btn" href="add.html">💬 Rejoindre N2XUS</a>
+  </div>
+</section>
+
+<footer>
+  <div class="brand" style="font-size:16px;letter-spacing:.2em">N2XUS</div>
+  <div class="footer-links">
+    <a href="features.html">Fonctionnalités</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="ai.html">IA</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+  <div class="footer-social">
+    <a href="https://discord.gg/muHKVKVWa" aria-label="Discord" data-cursor-hover>
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14c5.5-2 10.5-2 16 0" stroke="#d8b24c" stroke-width="3" stroke-linecap="round"/><path d="M14.5 16c-3 5-4 12-3 18 3.2 2.4 6.5 3.8 9.8 4.6l1.7-3.4" stroke="#d8b24c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M33.5 16c3 5 4 12 3 18-3.2 2.4-6.5 3.8-9.8 4.6l-1.7-3.4" stroke="#d8b24c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="18.5" cy="25" rx="3" ry="3.4" fill="#d8b24c"/><ellipse cx="29.5" cy="25" rx="3" ry="3.4" fill="#d8b24c"/></svg>
+    </a>
+    <a class="soon" href="#" aria-label="Instagram (bientôt)">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="30" height="30" rx="9" stroke="#d8b24c" stroke-width="3"/><circle cx="24" cy="24" r="7.5" stroke="#d8b24c" stroke-width="3"/></svg>
+    </a>
+    <a class="soon" href="#" aria-label="TikTok (bientôt)">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27 8v21c0 3.3-2.7 6-6 6s-6-2.7-6-6 2.7-6 6-6" stroke="#d8b24c" stroke-width="3" stroke-linecap="round"/><path d="M27 8c0 5.2 4 9.3 9 9.6" stroke="#d8b24c" stroke-width="3" stroke-linecap="round"/></svg>
+    </a>
+    <a class="soon" href="#" aria-label="YouTube (bientôt)">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="7" y="12" width="34" height="24" rx="7" stroke="#d8b24c" stroke-width="3"/><path d="M20 19l10 5-10 5V19z" fill="#d8b24c"/></svg>
+    </a>
+  </div>
+  <div>© 2026 N2XUS. Tous droits réservés.</div>
+</footer>
+
+<script src="js/background.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/tilt.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/counters.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

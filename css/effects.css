@@ -1,0 +1,86 @@
+/* ==========================================================================
+   N2XUS V3 — Effects: cursor, halos, glass, glow states
+   ========================================================================== */
+
+/* ---- Custom cursor ------------------------------------------------------ */
+body{cursor:none}
+a,button,.btn,.faq-q,.slider-nav button{cursor:none}
+
+.n2x-cursor{
+  position:fixed;top:0;left:0;width:8px;height:8px;margin:-4px;
+  border-radius:50%;background:var(--gold-light);
+  box-shadow:0 0 12px 2px rgba(216,178,76,.8);
+  pointer-events:none;z-index:9999;
+  transition:width .2s var(--ease),height .2s var(--ease),margin .2s var(--ease),background .2s var(--ease);
+  will-change:transform;
+}
+.n2x-ring{
+  position:fixed;top:0;left:0;width:38px;height:38px;margin:-19px;
+  border-radius:50%;border:1px solid rgba(216,178,76,.55);
+  pointer-events:none;z-index:9998;
+  transition:width .3s var(--ease),height .3s var(--ease),margin .3s var(--ease),
+             border-color .3s var(--ease),background .3s var(--ease),opacity .3s var(--ease);
+  will-change:transform;
+}
+.n2x-cursor.hover{width:16px;height:16px;margin:-8px;background:#fff}
+.n2x-ring.hover{
+  width:64px;height:64px;margin:-32px;
+  background:rgba(216,178,76,.08);
+  border-color:var(--gold);
+}
+.n2x-ring.click{width:30px;height:30px;margin:-15px;border-color:var(--gold-light)}
+
+.n2x-trail{
+  position:fixed;top:0;left:0;width:4px;height:4px;margin:-2px;
+  border-radius:50%;background:var(--gold);
+  pointer-events:none;z-index:9997;opacity:.5;
+  will-change:transform,opacity;
+}
+
+@media (hover:none), (pointer:coarse){
+  body{cursor:auto}
+  a,button,.btn,.faq-q,.slider-nav button{cursor:pointer}
+  .n2x-cursor,.n2x-ring,.n2x-trail{display:none}
+}
+
+/* ---- Card light-follow (tilt.js hooks) ---------------------------------- */
+.tilt-target{will-change:transform}
+
+/* card spotlight that follows cursor, driven by --mx/--my set from JS */
+.why-card, .review{position:relative;overflow:hidden}
+.why-card::before, .review::before{
+  content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:radial-gradient(220px circle at var(--mx,50%) var(--my,50%), rgba(216,178,76,.10), transparent 60%);
+  opacity:0;transition:opacity .3s var(--ease);
+}
+.why-card:hover::before, .review:hover::before{opacity:1}
+
+/* ---- Ambient halos -------------------------------------------------- */
+.halo{
+  position:absolute;border-radius:50%;pointer-events:none;
+  filter:blur(60px);opacity:.35;
+  background:radial-gradient(circle, var(--gold) 0%, transparent 70%);
+  animation:breathe 7s ease-in-out infinite;
+}
+@keyframes breathe{0%,100%{opacity:.22;transform:scale(1)}50%{opacity:.4;transform:scale(1.12)}}
+
+.hero .halo{width:520px;height:520px;top:10%;right:0;transform:translateX(30%)}
+
+/* ---- Glass utility -------------------------------------------------- */
+.glass{
+  background:rgba(12,13,15,.55);
+  backdrop-filter:blur(16px);
+  border:1px solid rgba(216,178,76,.12);
+}
+
+/* ---- Counter glow pulse on activation ------------------------------- */
+.stat.counted .count{animation:pulse-glow 1s var(--ease)}
+@keyframes pulse-glow{0%{text-shadow:0 0 0 rgba(216,178,76,0)}40%{text-shadow:0 0 50px rgba(216,178,76,.6)}100%{text-shadow:0 0 40px rgba(216,178,76,.25)}}
+
+/* ---- Nav link magnetic hover ----------------------------------------- */
+.nav-links a:not(.gold){position:relative}
+.nav-links a:not(.gold)::after{
+  content:'';position:absolute;left:0;bottom:-4px;width:0;height:1px;background:var(--gold);
+  transition:width .3s var(--ease);
+}
+.nav-links a:not(.gold):hover::after{width:100%}

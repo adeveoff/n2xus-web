@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard — N2XUS</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/effects.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<canvas id="bg-far"></canvas>
+<canvas id="bg-mid"></canvas>
+<canvas id="bg-near"></canvas>
+<div class="grain"></div>
+
+<nav class="nav">
+  <div class="brand"><img src="assets/logo.png" alt=""> N2XUS</div>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="features.html">Fonctionnalités</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="ai.html">IA</a>
+    <a href="faq.html">FAQ</a>
+    <a class="gold" href="add.html">Rejoindre N2XUS</a>
+  </div>
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-hero">
+  <p class="eyebrow reveal">Dashboard</p>
+  <h1 class="reveal">Votre serveur, piloté depuis le web</h1>
+  <p class="reveal">Captures d'écran réelles du dashboard N2XUS : membres, tickets, modération et sécurité, réunis dans un seul panneau.</p>
+</div>
+
+<section class="section" style="padding-top:20px">
+  <div class="dash-stage" style="width:100%">
+    <div class="terminal" data-cursor-hover style="max-width:780px">
+      <div class="terminal-bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span style="margin-left:auto">N2XUS PANEL — Aperçu réel</span>
+      </div>
+      <div class="terminal-body">
+        <div class="dash-slides">
+          <img src="assets/dashboard/overview.png" class="active" alt="Vue d'ensemble du dashboard N2XUS">
+          <img src="assets/dashboard/security.png" alt="Page Sécurité du dashboard N2XUS">
+          <img src="assets/dashboard/conversations.png" alt="Page Conversations (DM bridge) du dashboard N2XUS">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider-nav">
+    <button data-slide="prev" aria-label="Précédent">←</button>
+    <button data-slide="next" aria-label="Suivant">→</button>
+  </div>
+  <div class="slider-dots"></div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">Navigation</p>
+    <h2>Tous les modules, dans un seul menu</h2>
+    <p>Chaque catégorie est accessible depuis la barre latérale du dashboard.</p>
+  </div>
+  <div class="gallery">
+    <img class="reveal-zoom" src="assets/dashboard/sidebar.png" alt="Menu latéral complet du dashboard N2XUS" style="width:260px">
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="panel reveal-zoom">
+    <p class="eyebrow">Accès dashboard</p>
+    <h2>Rejoignez le Discord pour demander l'accès</h2>
+    <p>Le dashboard est réservé aux serveurs ayant ajouté N2XUS via ticket.</p>
+    <a class="btn" href="add.html">💬 Rejoindre N2XUS</a>
+  </div>
+</section>
+
+<footer>
+  <div class="brand" style="font-size:16px;letter-spacing:.2em">N2XUS</div>
+  <div class="footer-links">
+    <a href="features.html">Fonctionnalités</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="ai.html">IA</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+  <div class="footer-social">
+    <a href="https://discord.gg/muHKVKVWa" aria-label="Discord" data-cursor-hover>
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14c5.5-2 10.5-2 16 0" stroke="#d8b24c" stroke-width="3" stroke-linecap="round"/><path d="M14.5 16c-3 5-4 12-3 18 3.2 2.4 6.5 3.8 9.8 4.6l1.7-3.4" stroke="#d8b24c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M33.5 16c3 5 4 12 3 18-3.2 2.4-6.5 3.8-9.8 4.6l-1.7-3.4" stroke="#d8b24c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="18.5" cy="25" rx="3" ry="3.4" fill="#d8b24c"/><ellipse cx="29.5" cy="25" rx="3" ry="3.4" fill="#d8b24c"/></svg>
+    </a>
+    <a class="soon" href="#" aria-label="Instagram (bientôt)">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="30" height="30" rx="9" stroke="#d8b24c" stroke-width="3"/><circle cx="24" cy="24" r="7.5" stroke="#d8b24c" stroke-width="3"/></svg>
+    </a>
+    <a class="soon" href="#" aria-label="TikTok (bientôt)">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27 8v21c0 3.3-2.7 6-6 6s-6-2.7-6-6 2.7-6 6-6" stroke="#d8b24c" stroke-width="3" stroke-linecap="round"/><path d="M27 8c0 5.2 4 9.3 9 9.6" stroke="#d8b24c" stroke-width="3" stroke-linecap="round"/></svg>
+    </a>
+    <a class="soon" href="#" aria-label="YouTube (bientôt)">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="7" y="12" width="34" height="24" rx="7" stroke="#d8b24c" stroke-width="3"/><path d="M20 19l10 5-10 5V19z" fill="#d8b24c"/></svg>
+    </a>
+  </div>
+  <div>© 2026 N2XUS. Tous droits réservés.</div>
+</footer>
+
+<script src="js/background.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/tilt.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
